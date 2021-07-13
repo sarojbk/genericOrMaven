@@ -22,3 +22,13 @@ checking if authentication is needed again after new cmd window
 git config --global user.name "Saroj Singh"
 
 git config --global user.email "sarojbk.singh@gmail.com"	
+
+//create main from master with all commits
+git branch -m master main
+
+git push -u origin main
+
+
+git push origin --delete master
+
+
