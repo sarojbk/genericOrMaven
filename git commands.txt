@@ -1,0 +1,24 @@
+git remote add origin https://github.com/sarojbk/genericOrMaven.git
+
+git push -u origin master
+
+
+Entries in .git/config
+[remote "origin"]
+	url = https://github.com/sarojbk/genericOrMaven.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+//effects of vaious commands	
+git push origin
+
+git push origin master
+
+git push
+
+git push -u origin master
+
+checking if authentication is needed again after new cmd window
+
+git config --global user.name "Saroj Singh"
+
+git config --global user.email "sarojbk.singh@gmail.com"	
