@@ -29,6 +29,8 @@ git branch -m master main
 git push -u origin main
 
 
+git branch -d master
+
 git push origin --delete master
 
 
