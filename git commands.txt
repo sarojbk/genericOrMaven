@@ -33,4 +33,11 @@ git branch -d master
 
 git push origin --delete master
 
+C:\Users\user01\AppData\Local\Programs\Git\cmd
+git
+
+C:\Users\user01\AppData\Local\Programs\Git\usr\bin
+mintty
+
+https://git-scm.com/download/win
 
