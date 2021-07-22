@@ -41,3 +41,15 @@ mintty
 
 https://git-scm.com/download/win
 
+//git command for getting the commit having the first version of the file
+git log --oneline --diff-filter=A -- StringDecrypt.java
+4c4f1ba Adding dependency StringDecrypt.java
+
+git rev-parse HEAD
+d0ee4c1aca6e145f49fa525f5bcea2535deea3b1
+
+git diff 4c4f1ba d0ee4c1aca6e145f49fa525f5bcea2535deea3b1 -- StringDecrypt.java
+
+git diff 4c4f1ba HEAD -- StringDecrypt.java
+
+git diff 4c4f1ba -- StringDecrypt.java
