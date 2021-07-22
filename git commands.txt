@@ -53,3 +53,7 @@ git diff 4c4f1ba d0ee4c1aca6e145f49fa525f5bcea2535deea3b1 -- StringDecrypt.java
 git diff 4c4f1ba HEAD -- StringDecrypt.java
 
 git diff 4c4f1ba -- StringDecrypt.java
+
+//shows all branches and divergence with commits
+git log --oneline --decorate --graph --all
+
