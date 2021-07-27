@@ -57,3 +57,22 @@ git diff 4c4f1ba -- StringDecrypt.java
 //shows all branches and divergence with commits
 git log --oneline --decorate --graph --all
 
+git tag -a v1.2 9fceb02 -m "Message here"
+
+//list tags with -m messages
+git tag -n
+//delete local tag
+git tag -d <tag_name>
+git push --delete origin tagname
+//following deletes too; notice the colon
+git push origin :refs/tags/<tag>
+git push origin :<tag>
+//bring tags from remote to local
+git fetch
+//push tags from local to remote
+git push origin tagname
+
+
+
+
+
