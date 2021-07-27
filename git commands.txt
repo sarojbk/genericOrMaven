@@ -72,7 +72,8 @@ git fetch
 //push tags from local to remote
 git push origin tagname
 
-
+delete remote branch
+git push origin --delete <remoteBranch>
 
 
 
