@@ -76,4 +76,79 @@ delete remote branch
 git push origin --delete <remoteBranch>
 
 
+git remote repo in file sys// Cleanup from below
+--
+Z:\1Temp\1Date\07july\gitRemoteRepoInFileSystem\r1>git init --bare myrepo.git
+Initialized empty Git repository in Z:/1Temp/1Date/07july/gitRemoteRepoInFileSystem/r1/myrepo.git/
+
+cd l1
+git init
+git remote add origin Z:/1Temp/1Date/07july/gitRemoteRepoInFileSystem/r1/myrepo.git/
+
+HEAD current commit
+Head~1: first parent // in merge their may be 2 or more parents; one 1st parent and other 2nd parent
+Head~2: first parent's first parent // grand parent 
+head~3: first parent's first parent's first parent //great grand parent
+
+head^1: first parent
+head^2: second parent
+head^3: third parent
+head^ : another way to say first parent, 1 is default
+head^1^1: first parent's first parent // another way head^^
+head^1^2: first parent's second parent
+head^2^1: 2nd parent's first parent
+head^2^3: 2nd parents 3rd parent
+
+head^=head~
+head^^=head~2
+head^^^=head~3
+
+l1
+change origin from / to \ 
+git remote set-url origin Z:\1Temp\1Date\07july\gitRemoteRepoInFileSystem\r1\myrepo.git\
+git remote show origin
+
+git checkout 2232194ae5d66cef6a2dbd2ef040bd7ec58c5dc8 --orphan b1
+
+git commit -a -m "branch l1 b1 commit 2"
+
+git checkout master
+git merge b1 --allow-unrelated-histories
+
+git switch -c b2
+git checkout -b b3
+
+--detached head 3b374b0
+
+//push all branches 
+git push origin --all
+
+git clone Z:\1Temp\1Date\07july\gitRemoteRepoInFileSystem\r1\myrepo.git\
+// is required as it create a child dir
+cd myrepo
+
+create l2
+change data in l2 and push to r1
+git clone
+
+l3
+git init
+git remote add origin Z:\1Temp\1Date\07july\gitRemoteRepoInFileSystem\r1\myrepo.git\
+
+//wont work without add first
+git remote set-url origin Z:\1Temp\1Date\07july\gitRemoteRepoInFileSystem\r1\myrepo.git\
+
+git fetch origin
+
+git push -u origin b4DetachedEarlier
+
+//very useful command if there are multiple branches
+git remote show origin
+
+ master
+~git push -u origin master
+
+create upstream in l1
+push to r2
+create originr in r2 pointing to r1
 
