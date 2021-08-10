@@ -152,3 +152,13 @@ create upstream in l1
 push to r2
 create originr in r2 pointing to r1
 
+
+git diff // Index vs WorkingTree
+git diff HEAD // Head(CommitID, Branch) vs Working tree
+git diff --cached //HEAD vs Index
+
+git add . // add workingTree files to index
+git restore --staged gitVisualFile1 // removes file from index , does not change the workDir; file in index is now same as HEAD
+git restore gitVisualFile1 // discard file in WorkDir and take it from index (Index may or may not be same as HEAD)
+
+git stash push //saves both indes and work dir changes to stash // not sure need to do more research
